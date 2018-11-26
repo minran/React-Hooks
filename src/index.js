@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, {
+  useState
+} from "react";
 import ReactDOM from "react-dom";
-import Example from "./components/hook1.jsx";
+import Example from "./components/Example.jsx";
+import FriendStatus from './components/FriendStatus';
+import ChatRecipientPicker from './components/ChatRecipientPicker';
 import "./styles.css";
 
 function App() {
   const [status, setStatus] = useState(true)
+  const word = FriendStatus({
+    friend: {
+      id: status
+    }
+  })
   return (
     <div className="App">
       <h1>Hello CodeSandbox</h1>
@@ -15,6 +24,8 @@ function App() {
       {
         status && <Example />
       }
+      <div>{word}</div>
+      <ChatRecipientPicker/>
     </div>
   );
 }
