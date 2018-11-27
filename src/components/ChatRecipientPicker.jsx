@@ -15,11 +15,11 @@ let ChatRecipientPicker = () => {
 	
 	return (
 		<div>
-			<div style={{
+			<p style={{
 				color: color
 			}}>
 				test dic
-			</div>
+			</p>
 			<select
 				value = {recipientID}
 				onChange =  { e => setRecipientID(Number(e.target.value))}

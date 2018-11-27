@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import Example from "./components/Example.jsx";
 import FriendStatus from './components/FriendStatus';
 import ChatRecipientPicker from './components/ChatRecipientPicker';
+import Todos from './components/Todos';
 import "./styles.css";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       }
       <div>{word}</div>
       <ChatRecipientPicker/>
+      <Todos></Todos>
     </div>
   );
 }
