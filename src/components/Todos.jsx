@@ -7,7 +7,6 @@ function Todos() {
 	function handleAddClick (text) {
 		dispatch({type: 'add', text})
 	}
-	console.log(todos);
 	return (
 		<div>
 			<button
